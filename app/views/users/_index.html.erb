@@ -11,8 +11,8 @@
       <tr>
         <td><%= image_tag user.get_profile_image, size: '50x50' %></td>
         <td><%= user.name %></td>
-        <td>フォロー数:<%= user.followed.count %></td>
-        <td>フォロワー数:<%= user.follower.count %></td>
+        <td>フォロー数:<%= user.follower.count %></td>
+        <td>フォロワー数:<%= user.followed.count %></td>
         <td></td>
         <%= render partial: "relationships/btn", locals: { current_user: current_user, user: user } %>
         <td><%= link_to 'Show', user %></td>
