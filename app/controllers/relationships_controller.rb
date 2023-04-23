@@ -9,5 +9,6 @@ class RelationshipsController < ApplicationController
     current_user.unfollow(params[:user_id])
     redirect_to request.referer
   end
+  
 
 end
